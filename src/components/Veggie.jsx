@@ -66,12 +66,12 @@ const Card = styled.div`
   positon: relative;
 
   img {
-    border-radius: 2rem;
     position: absolute;
     left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 2rem;
   }
   p {
     position: absolute;

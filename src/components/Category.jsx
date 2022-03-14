@@ -15,9 +15,9 @@ function Category() {
         <FaHamburger />
         <h4>American</h4>
       </NavLink>
-      <NavLink to={"./cuisine/Thai"}>
+      <NavLink to={"./cuisine/Georgian"}>
         <GiNoodles />
-        <h4>Thai</h4>
+        <h4>Georgian</h4>
       </NavLink>
       <NavLink to={"./cuisine/Japanese"}>
         <GiChopsticks />

@@ -1,11 +1,18 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import { FaSearch } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 const Search = () => {
   const [input, setInput] = useState("");
+  const navigate = useNavigate();
+
+  const submitHandler = (e) => {
+    e.preventDefault();
+    navigate("/searched/" + input);
+  };
   return (
-    <FormStyle>
+    <FormStyle onSubmit={submitHandler}>
       <div>
         <FaSearch></FaSearch>
         <input
@@ -13,7 +20,6 @@ const Search = () => {
           type="text"
           value={input}
         />
-        <h1>{input}</h1>
       </div>
     </FormStyle>
   );
